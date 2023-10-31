@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: lrxs
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-ncqs-tenant/byoc-app-qbve/lrxs@sha256:60c82d71042c1578fb2255d1cfc910a22ff2b32eafe6bcda2846552c314b8b84
+        name: my-java-quarkus
+        resources: {}
+status: {}
